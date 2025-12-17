@@ -1,0 +1,98 @@
+:root {
+  --color-christmas-red: hsl(355, 78%, 56%);
+  --color-christmas-green: hsl(142, 76%, 36%);
+  --color-christmas-gold: hsl(45, 93%, 47%);
+  --color-snow: hsl(210, 40%, 98%);
+  
+  --bg-dark: hsl(222, 47%, 11%);
+  --bg-card: hsl(217, 33%, 17%);
+  --text-primary: hsl(210, 40%, 98%);
+  --text-secondary: hsl(215, 20%, 65%);
+  --text-muted: hsl(215, 20%, 45%);
+
+  --font-heading: 'Outfit', sans-serif; /* We will need to load this */
+  --font-body: 'Inter', sans-serif;     /* We will need to load this */
+  
+  --radius: 12px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-neon: 0 0 10px var(--color-christmas-red), 0 0 20px var(--color-christmas-red);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 600px; /* Mobile first focus given 'program flow' usually viewed on phones */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.text-gold { color: var(--color-christmas-gold); }
+.text-red { color: var(--color-christmas-red); }
+.text-green { color: var(--color-christmas-green); }
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--color-christmas-red);
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(212, 36, 38, 0.39);
+}
+.btn-primary:hover {
+  background: hsl(355, 78%, 50%);
+  transform: translateY(-1px);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
