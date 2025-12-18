@@ -15,13 +15,7 @@ export default function EventCard({ event, isActive }: { event: ProgramEvent; is
             viewport={{ once: true, margin: "-50px" }}
             className={`event-card ${isActive ? 'active' : ''}`}
         >
-            {isActive && (
-                <div className="badge-now">
-                    NOW HAPPENING
-                </div>
-            )}
-
-            <div className="event-content">
+           <div className="event-content">
                 <div className={`icon-box ${isActive ? 'active-icon' : ''}`}>
                     <IconComponent size={24} />
                 </div>

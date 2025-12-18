@@ -1,4 +1,5 @@
 'use client';
+import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PROGRAM_FLOW } from '@/data/program';
@@ -37,7 +38,7 @@ export default function Home() {
           </motion.div>
 
           <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <h2 className="invite-text">You are invited to the</h2>
+            <h2 className="invite-text" style={{marginBottom: '3rem'}}>You are invited to the</h2>
             <h1 className="main-title">
               CSSBO <br className="md-hidden" /> Christmas <br /> <span className="text-gold">Party!</span>
             </h1>
@@ -57,7 +58,7 @@ export default function Home() {
               </div>
               <div className="detail-item">
                 <Clock className="text-gold" />
-                <span>1:00 PM - 6:00 PM</span>
+                <span>11:00 AM - 4:00 PM</span>
               </div>
               <div className="detail-item">
                 <MapPin className="text-gold" />
@@ -283,7 +284,7 @@ export default function Home() {
             Christmas<br />Party Flow
           </h1>
           <p className="subtitle">
-            Welcome to the celebration! Tap an event to mark it as active.
+            Welcome to the celebration!
           </p>
         </header>
 

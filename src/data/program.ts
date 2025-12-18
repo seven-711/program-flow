@@ -21,17 +21,17 @@ export const PROGRAM_FLOW: ProgramEvent[] = [
     id: '2',
     time: '11:30 AM',
     title: 'Opening Prayer & Remarks',
-    description: 'A moment of gratitude followed by opening remarks from the host.',
+    description: 'A moment of gratitude for the holiday season before lunchtime.',
     icon: 'Mic',
-    duration: '15 mins'
+    duration: '30 mins'
   },
   {
     id: '3',
-    time: '12:45 PM',
+    time: '12:00 NN',
     title: 'Lunch',
-    description: 'Enjoy a sumptuous holiday feast. Buffet is open!',
+    description: 'Happy lunchtime!',
     icon: 'Utensils',
-    duration: '1 hr 15 mins',
+    duration: '1 hr',
     highlight: true
   },
   {
@@ -40,7 +40,7 @@ export const PROGRAM_FLOW: ProgramEvent[] = [
     title: 'Parlor Games',
     description: 'Fun and exciting games for everyone with prizes to be won!',
     icon: 'Gamepad2',
-    duration: '45 mins'
+    duration: '1 hr'
   },
   {
     id: '5',
@@ -48,19 +48,19 @@ export const PROGRAM_FLOW: ProgramEvent[] = [
     title: 'Intermission Numbers',
     description: 'Special performances from our talented guests.',
     icon: 'Music',
-    duration: '30 mins'
+    duration: '1 hr'
   },
   {
     id: '6',
-    time: '2:45 PM',
+    time: '3:45 PM',
     title: 'Exchange Gifts',
     description: 'The highlight of the night! exchanging gifts and spreading joy.',
     icon: 'Gift',
-    duration: '45 mins'
+    duration: '1 hr'
   },
   {
     id: '7',
-    time: '3:45 PM',
+    time: '4:00 PM',
     title: 'Closing & Socials',
     description: 'Closing remarks and free time for photos and catching up.',
     icon: 'PartyPopper',
